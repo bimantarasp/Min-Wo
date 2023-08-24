@@ -1,0 +1,366 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hallo",
+        "hai",
+        "halo",
+        "hei",
+        "hi",
+        "hy",
+        "pagi",
+        "morning",
+        "siang",
+        "afternoon",
+        "sore",
+        "malam",
+        "bro",
+        "sis",
+        "kawan"
+      ],
+      "responses": [
+        "Hai! Min-Wo di sini. Mau tau informasi tentang apa nih?",
+        "Halo! Saya Min-Wo, salam kenal ya! Mau tau tentang desa Wonorejo, kan?",
+        "Helo! Ini Min-Wo. Lagi kepo tentang desa Wonorejo ya?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Dah",
+        "Dadah",
+        "Bye",
+        "Byee",
+        "Good bye",
+        "Selamat tinggal",
+        "Sampai jumpa",
+        "Bai",
+        "See you"
+      ],
+      "responses": [
+        "Bye!",
+        "Dadahh!",
+        "Good bye!",
+        "Dahh, semoga harimu menyenangkan yaa!",
+        "Sampai jumpa lagi!",
+        "See u! Senang bisa membantu"
+      ]
+    },
+    {
+      "tag": "terimakasih",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "Terima kasih",
+        "Makasih",
+        "Terima kasih banyak"
+      ],
+      "responses": [
+        "Dengan senang hati:)"
+      ]
+    },
+    {
+      "tag": "penjelasan_desa_wonorejo",
+      "patterns": [
+        "Apa itu Desa Wonorejo?"
+      ],
+      "responses": [
+        "Desa Wonorejo merupakan desa yang berada di wilayah kecamatan Polokarto, kabupaten Sukoharjo, Jawa Tengah"
+      ]
+    },
+    {
+      "tag": "asal_nama_desa",
+      "patterns": [
+        "Bagaimana asal nama Desa Wonorejo?",
+        "Asal nama Desa Wonorejo"
+      ],
+      "responses": [
+        "Nama Desa Wonorejo berasal dari kata Wono yang berarti alas/hutan, dan Rejo yang berarti ramai, sehingga nama Desa Wonorejo memiliki arti hutan yang ramai."
+      ]
+    },
+    {
+      "tag": "asal_mula_desa",
+      "patterns": [
+        "Bagaimana asal mula Desa Wonorejo?",
+        "Awal mula Desa Wonorejo"
+      ],
+      "responses": [
+        "Desa Wonorejo memiliki awal mula yang didirikan oleh Kyai Imam Syuhodo pada abad ke-17, dimana penamaan Wonorejo diberikan oleh Sinuhun Paku Buwono IV di masa pemerintahan Raja Ketiga Keraton Kasunanan Surakarta yang berasal dari kata Wono berarti hutan dan Rejo berarti ramai."
+      ]
+    },
+    {
+      "tag": "ciri_khas_desa",
+      "patterns": [
+        "Apa yang menjadi ciri khas Desa Wonorejo?",
+        "Apa saja ciri khas Desa Wonorejo?"
+      ],
+      "responses": [
+        "Desa Wonorejo memiliki ciri khas sebagai desa religius, desa budaya, desa wisata konveksi, dan desa kuliner."
+      ]
+    },
+    {
+      "tag": "event_unggulan_desa",
+      "patterns": [
+        "Apa saja event unggulan Desa Wonorejo?",
+        "Apakah Desa Wonorejo memiliki event unggulan?"
+      ],
+      "responses": [
+        "Desa Wonorejo memiliki event unggulan, diantaranya Wonorejo Cup (turnamen sepak bola) yang diadakan setiap tahun, dan HUT Desa Wonorejo yang dilaksanakan setiap bulan Oktober."
+      ]
+    },
+    {
+      "tag": "sebutan_desa_wonorejo",
+      "patterns": [
+        "Apa saja sebutan Desa Wonorejo?",
+        "Apakah Desa Wonorejo memiliki sebutan?"
+      ],
+      "responses": [
+        "Desa Wonorejo memiliki beberapa sebutan diantaranya desa religius, desa budaya, desa wisata konveksi, dan desa kuliner."
+      ]
+    },
+    {
+      "tag": "sistem_pelayanan_desa",
+      "patterns": [
+        "Bagaimana sistem pelayanan Desa Wonorejo?",
+        "Apakah sistem pelayanan Desa Wonorejo mudah?",
+        "Apakah sistem pelayanan Desa Wonorejo sulit?"
+      ],
+      "responses": [
+        "Desa Wonorejo memiliki sistem pelayanan desa yang mudah, dimana masyarakat dapat mengajukan permohonan pelayanan desa dalam hal administratif maupun non-administratif di balai desa."
+      ]
+    },
+    {
+      "tag": "dusun_desa_wonorejo",
+      "patterns": [
+        "Ada berapa dusun di Desa Wonorejo?",
+        "Apa saja dusun yang ada di Desa Wonorejo"
+      ],
+      "responses": [
+        "Desa Wonorejo saat ini memiliki 7 dusun diantaranya Wonorejo, Blimbing, Sayangan, Bangunrejo, Bancakan, Jetis, dan Kauman."
+      ]
+    },
+    {
+      "tag": "rt_desa_wonorejo",
+      "patterns": [
+        "Ada berapa RT di desa Wonorejo?"
+      ],
+      "responses": [
+        "Desa Wonorejo saat ini memiliki 31 RT."
+      ]
+    },
+    {
+      "tag": "rw_desa_wonorejo",
+      "patterns": [
+        "Ada berapa RW di desa Wonorejo?"
+      ],
+      "responses": [
+        "Desa Wonorejo saat ini memiliki 6 RW."
+      ]
+    },
+    {
+      "tag": "tempat_ikonik_desa",
+      "patterns": [
+        "Apakah Desa Wonorejo memiliki tempat ikonik?",
+        "Apa saja tempat ikonik Desa Wonorejo?"
+      ],
+      "responses": [
+        "Desa Wonorejo memiliki beberapa tempat ikonik diantaranya Masjid Agung Imam Syuhodo, dan Lapangan Desa Wonorejo."
+      ]
+    },
+    {
+      "tag": "administrasi_umum_desa",
+      "patterns": [
+        "Apa saja contoh pelayanan administrasi umum di Desa Wonorejo?"
+      ],
+      "responses": [
+        "Desa Wonorejo menerima pelayanan administrasi umum yang diantaranya pelayanan pembuatan Surat Keterangan Warga Desa, Surak Keterangan Tidak Mampu (SKTM), dan Sertifikat."
+      ]
+    },
+    {
+      "tag": "administrasi_kependudukan_desa",
+      "patterns": [
+        "Apa saja contoh pelayanan administrasi kependudukan di Desa Wonorejo?"
+      ],
+      "responses": [
+        "Desa Wonorejo menerima pelayanan administrasi kependudukan yang diantaranya pelayanan pembuatan Kartu Keluarga (KK), Kartu Tanda Penduduk (KTP), dan Akta Kelahiran."
+      ]
+    },
+    {
+      "tag": "administrasi_pembangunan_desa",
+      "patterns": [
+        "Apa saja contoh pelayanan administrasi pembangunan di Desa Wonorejo?"
+      ],
+      "responses": [
+        "Desa Wonorejo menerima pelayanan administrasi pembangunan yang diantaranya pelayanan pembuatan Surat Keterangan Domisili, Surat Keterangan Usaha, dan Surat Keterangan Tanah."
+      ]
+    },
+    {
+      "tag": "struktur_pemerintahan_desa",
+      "patterns": [
+        "Bagaimana struktur pemerintahan Desa Wonorejo"
+      ],
+      "responses": [
+        "Dalam struktur pemerintahan Desa Wonorejo, kepala desa merupakan pemimpin tertinggi yang dibantu oleh perangkat desa, dan Badan Permusyawaratan Desa (BPD)."
+      ]
+    },
+    {
+      "tag": "surat_pengantar_kades",
+      "patterns": [
+        "Apa saja dokumen yang dibutuhkan untuk mendapat surat pengantar kepala desa?"
+      ],
+      "responses": [
+        "Untuk mendapat surat pengantar kepala desa, diperlukan beberapa dokumen meliputi Kartu Tanda Penduduk (KTP), Kartu Keluarga (KK), dan Surat Keterangan RT."
+      ]
+    },
+    {
+      "tag": "pelatihan_desa",
+      "patterns": [
+        "Apakah Desa Wonorejo rutin memiliki memiliki pelatihan Desa?",
+        "Apakah Desa Wonorejo rutin memiliki pelatihan?"
+      ],
+      "responses": [
+        "Desa Wonorejo rutin mengadakan pelatihan yang diantaranya pelatihan untuk internal perangkat desa, dan pelatihan untuk masyarakat desa seperti pelatihan untuk PKK"
+      ]
+    },
+    {
+      "tag": "lapor_aspirasi_desa",
+      "patterns": [
+        "Bagaimana mekanisme penyampaian pelaporan/aspirasi desa?",
+        "Bagaimana mekanisme penyampaian pelaporan desa?",
+        "Bagaimana mekanisme penyampaian aspirasi desa?"
+      ],
+      "responses": [
+        "Masyarakat dapat menyampaikan laporan/aspirasi desa melalui mekanisme yang telah disediakan oleh desa Wonorejo, yaitu melalui musyawarah RT, kemudian musyawarah RW, hingga aspirasi disampaikan ke BPD dan dirapatkan oleh pemerintah desa."
+      ]
+    },
+    {
+      "tag": "tempat_wisata_desa",
+      "patterns": [
+        "Adakah tempat wisata yang dapat dikunjungi di Desa Wonorejo?",
+        "Apakah Desa Wonorejo memiliki tempat wisata?"
+      ],
+      "responses": [
+        "Desa Wonorejo memiliki beberapa tempat wisata yang dapat dikunjungi diantaranya Masjid Agung Imam Syuhodo, Lapangan Desa Wonorejo, dan UMKM masyarakat desa yang dapat dijadikan wisata konveksi."
+      ]
+    },
+    {
+      "tag": "kepadatan_penduduk_desa",
+      "patterns": [
+        "Berapa kepadatan penduduk Desa Wonorejo?",
+        "Berapa jumlah penduduk Desa Wonorejo?",
+        "Berapa jumlah KK di Desa Wonorejo?"
+      ],
+      "responses": [
+        "Desa Wonorejo memiliki kepadatan penduduk sebanyak 6.667 warga, yang terbagi menjadi 1860 kepala keluarga."
+      ]
+    },
+    {
+      "tag": "mekanisme_pilkades",
+      "patterns": [
+        "Bagaimana mekanisme pemilihan kepala desa di Desa Wonorejo?"
+      ],
+      "responses": [
+        "Mekanisme pemilihan kepala desa di Desa Wonorejo yaitu dengan cara pemilihan langsung oleh masyarakat desa setiap 6 tahun sekali."
+      ]
+    },
+    {
+      "tag": "mekanisme_pemilihan_perangkat_desa",
+      "patterns": [
+        "Bagaimana mekanisme pemilihan perangkat desa di Desa Wonorejo?"
+      ],
+      "responses": [
+        "Mekanisme pemilihan perangkat desa di desa Wonorejo yaitu melalui tahapan seleksi administrasi, kemudian tahapan seleksi tulis dari pemerintah desa dan kabupaten"
+      ]
+    },
+    {
+      "tag": "mekanisme_pemilihan_rt",
+      "patterns": [
+        "Bagaimana mekanisme pemilihan ketua RT di desa Wonorejo?"
+      ],
+      "responses": [
+        "Mekanisme pemilihan ketua RT di desa Wonorejo yaitu melalui musyawarah warga RT setempat dan pemilihan suara oleh warga RT tersebut."
+      ]
+    },
+    {
+      "tag": "mekanisme_pemilihan_rw",
+      "patterns": [
+        "Bagaimana mekanisme pemilihan ketua RW di desa Wonorejo?"
+      ],
+      "responses": [
+        "Mekanisme pemilihan ketua RW di desa Wonorejo yaitu melalui musyawarah warga RW setempat dan pemilihan suara oleh warga RW tersebut."
+      ]
+    },
+    {
+      "tag": "bumdes_wonorejo",
+      "patterns": [
+        "Apakah Desa Wonorejo memiliki BUMDes?",
+        "Apakah Desa Wonorejo memiliki Badan Usaha Milik Desa?",
+        "Apa saja Badan Usaha Milik Desa di Desa Wonorjeo?"
+      ],
+      "responses": [
+        "Desa Wonorejo memiliki Badan Usaha Milik Desa yang diantaranya penyewaan Lapangan Desa Wonorejo dan Pengelolaan Jenis Sampah."
+      ]
+    },
+    {
+      "tag": "umkm_bumdes_wonorejo",
+      "patterns": [
+        "Apakah ada UMKM warga desa yang tergabung dalam BUMDes?",
+        "Apakah ada UMKM warga desa yang tergabung dalam Badan Usaha Milik Desa Wonorejo?"
+      ],
+      "responses": [
+        "Desa Wonorejo memiliki beberapa UMKM warga desa yang tergabung dalam BUMDes, diantaranya UMKM yang bergerak di bidang kuliner yang tergabung dalam Halal Food Center desa Wonorejo."
+      ]
+    },
+    {
+      "tag": "pendataan_umkm_desa",
+      "patterns": [
+        "Bagaimana proses pendataan UMKM oleh desa Wonorejo?"
+      ],
+      "responses": [
+        "Desa Wonorejo melakukan pendataan UMKM melalui mekanisme yang telah disediakan oleh desa Wonorejo, yaitu melalui pendataan oleh perangkat desa."
+      ]
+    },
+    {
+      "tag": "karang_taruna_desa",
+      "patterns": [
+        "Apakah Desa Wonorejo memiliki organisasi Karang Taruna?",
+        "Apakah Desa Wonorejo memiliki organisasi kepemudaan?",
+        "Apa nama organisasi kepemudaan di Desa Wonorejo?"
+      ],
+      "responses": [
+        "Desa Wonorejo memiliki organisasi kepemudaan yang bernama Karang Taruna Bakti Muda Desa Wonorejo."
+      ]
+    },
+    {
+      "tag": "nama_kepala_desa",
+      "patterns": [
+        "Siapa nama kepala desa yang saat ini menjabat di pemerintahan Desa Wonorejo?",
+        "Siapa nama kepala desa di Desa Wonorejo?"
+      ],
+      "responses": [
+        "Kepala Desa yang saat ini menjabat di pemerintahan Desa Wonorejo yaitu bapak Yusuf Aziz Rahma, S.Pd."
+      ]
+    },
+    {
+      "tag": "persebaran_agama_desa",
+      "patterns": [
+        "Bagaimana persebaran agama di Desa Wonorejo?",
+        "Apa saja agama di Desa Wonorejo?"
+      ],
+      "responses": [
+        "Desa Wonorejo memiliki persebaran agama 100 % muslim yang hampir keseluruhannya Muhammadiyah."
+      ]
+    },
+    {
+      "tag": "pendiri_desa_wonorejo",
+      "patterns": [
+        "Siapa yang mendirikan desa Wonorejo?",
+        "Desa Wonorejo didirikan oleh siapa?"
+      ],
+      "responses": [
+        "Desa Wonorejo didirikan oleh Kyai Imam Syuhodon pada sekitar abad ke-17."
+      ]
+    }
+  ]
+}

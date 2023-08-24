@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom CSS -->
+  <link href="style.css" rel="stylesheet">
+
+  <title>Min-Wo : Chatbot Desa Wonorejo</title>
+</head>
+
+<body style="background-color: #F8F9F9;">
+  <!-- Header -->
+  <div class="d-flex justify-content-between align-items-center px-5 py-3">
+    <div>
+      <img src="static/images/Kabupaten_Sukoharjo.png" height="50", width="auto">
+    </div>
+    <h1>Min-Wo : Chatbot Desa Wonorejo</h1>
+    <div>
+      <img src="static/images/logo_uns.png" height="50", width="auto">
+    </div>
+  </div>
+  <!-- Header End  -->
+  <div style="background-color: #eee;">
+    <div class="container py-5">
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-12">
+
+          <div class="card" id="chat2">
+            <div class="card-header d-flex justify-content-between align-items-center p-3">
+              <h5 class="mb-0">Chat</h5>
+            </div>
+            <div class="card-body overflow-scroll" style="position: relative; height: 400px">
+
+              <!-- Chat log -->
+              <div id="chat-log"></div>
+
+            </div>
+            <div class="card-footer text-muted d-flex justify-content-start align-items-center p-3">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
+                alt="avatar 3" style="width: 40px; height: 100%;margin-right: 20px;">
+              <input type="text" class="form-control form-control-lg" id="user-input" placeholder="Type message">
+              <button class="ms-3" id="send-button"><i class="fas fa-paper-plane"></i></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+  <!-- TensorFlow.js and chatbot model script -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script>
+    // Load the TensorFlow.js model and implement chatbot functionality
+    const MODEL_URL = 'chatbot_model_tfjs/model.json';
+
+    // Helper function to preprocess user input
+    function preprocessInput(inputText) {
+      const sanitizedInput = inputText
+        .toLowerCase()
+        .replace(/[^\w\s]|_/g, '')
+        .replace(/\s+/g, ' ');
+      return [sanitizedInput];
+    }
+
+    // Helper function to display chat log
+    function displayChatLog(message) {
+      const chatLog = document.getElementById('chat-log');
+      const messageElement = document.createElement('div');
+      messageElement.textContent = message;
+      chatLog.appendChild(messageElement);
+    }
+
+    // Load the model and handle user input
+    async function loadModelAndHandleInput() {
+      const model = await tf.loadLayersModel(MODEL_URL);
+      const userInput = document.getElementById('user-input').value;
+      const preprocessedInput = preprocessInput(userInput);
+
+      // Preprocess the input
+      const tokenizedInput = tokenizer.textsToSequences([preprocessedInput]);
+      const paddedInput = padSequences(tokenizedInput, { maxlen: input_shape });
+
+      // Make predictions
+      const output = model.predict(paddedInput);
+      const predictedClass = tf.argMax(output, axis=1).dataSync()[0];
+      const responseTag = label.classes_[predictedClass];
+      const response = random.choice(responses[responseTag]);
+
+      // Display the response
+      displayChatLog('Min-Wo: ' + response);
+
+      // Clear the input field
+      document.getElementById('user-input').value = '';
+
+      // Check if the conversation should end
+      if (responseTag === 'goodbye') {
+      }
+    }
+
+    // Attach event listener to send button
+    document.getElementById('send-button').addEventListener('click', loadModelAndHandleInput);
+  </script>
+</body>
+</html>

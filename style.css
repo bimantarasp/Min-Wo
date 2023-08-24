@@ -1,0 +1,31 @@
+/* Chat container */
+#chat2 {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Chat log */
+  #chat-log {
+    overflow-y: scroll;
+    height: 400px;
+  }
+  
+  /* Avatar image */
+  .card-footer img {
+    width: 40px;
+    height: 100%;
+    margin-right: 20px;
+  }
+  
+  /* Send button */
+  #send-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Background color */
+  body {
+    background-color: #F8F9F9;
+  }
+  
